@@ -12,6 +12,7 @@ class FieldInteger extends Field<Integer> {
   @Override
   public boolean parse(String in) {
     try {
+
       set(Integer.parseInt(in));
       return true;
     } catch (NumberFormatException e) {
